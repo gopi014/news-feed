@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{data.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-img src="{{data.urlToImage}}"></ion-img>
+    <ion-card-content>
+      {{data.description}}
+      <ion-button ion-button fill="outline" href="{{data.url}}" large>Read full article</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
