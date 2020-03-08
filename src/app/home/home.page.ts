@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../services/api.service';
 import { Router,NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-home',
@@ -13,7 +13,6 @@ export class HomePage {
   ionViewDidEnter(){
 
     this.apiService.getNews().subscribe((data)=>{
-      console.log(data);
       this.articles = data['articles'];
     });
   }
